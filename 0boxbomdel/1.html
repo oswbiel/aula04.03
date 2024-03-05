@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="stylesheet.css" media="screen">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INLINE BOX INLIBOX</title>
+    <STYle>
+        div, p, h1, strong, em, span { 
+            border: 1px solid black;
+            background-color: #ccc;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        .ib{
+            background-color: #02735E;
+            display: inline-block;
+        }
+    </STYle>
+</head>
+<body>
+    <!-- elementos box não ficam lado a lado -->
+    <div> Isto é uma div </div>
+    <div>isto é outro div</div>
+    <div>divs são renderizadas como box</div>
+    <h1> titulos tambem e uma caixa</h1>
+
+    <!-- inline não aceitam largura, altura e margens top e bottom -->
+    <strong> strong é um elemento inline </strong>
+    <strong> strong </strong>
+    <em> Emphasis </em>
+    <span> span é uma caixa generica de textos </span>
+
+</body>
+</html>
+
+<!-- renderizar como inline-box -->
+  <!-- renderizar como inline-block -->
+  <div class="ib">Isto é uma div</div>
+  <strong class="ib">Strong </strong>
+  <em class="ib">Emphasis</em>
+
+</body>
+</html>
